@@ -1,11 +1,11 @@
-var http = require("http");
-var express = require('express');
-var app = express();
-var mysql      = require('mysql');
-var bodyParser = require('body-parser');
+const http = require("http");
+const express = require('express');
+const app = express();
+const mysql      = require('mysql');
+const bodyParser = require('body-parser');
 
 //start mysql connection
-var connection = mysql.createConnection({
+let connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : '',
@@ -29,12 +29,11 @@ app.use(bodyParser.urlencoded({
 
 
 //create app server
-var server = app.listen(3000,  "127.0.0.1", function () {
+const server = app.listen(3000,  "127.0.0.1", function () {
 
-  var host = server.address().address
-  var port = server.address().port
-
-  console.log("Example app listening at http://%s:%s", host, port)
+  let host = server.address().address;
+   port = server.address().port;
+  console.log("app listening at http://%s:%s", host, port)
 
 });
 

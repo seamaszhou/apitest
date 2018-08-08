@@ -1,4 +1,4 @@
-# how to create table in db
+# How to create table in db
 You need to craete 'test' database into mysql and import customer.sql table into your mysql database.
 
 
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
 
 
 # How to run nodejs application
-<p>copy app.js and package.json file into your nodejs project folder,</p>
+<p>copy everything into your nodejs project folder,</p>
 <p>Open command line and cd to your above nodejs project folder</p>
-<p>run 'npm install'</p>
-<p>run 'node app.js'</p>
+<p>run 'npm install' in your terminal</p>
+<p>run 'node app.js' in your terminal</p>
